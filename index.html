@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="title">The Famous Weather App</h1>
+    <h3 class="city"></h3>
+    <section class="searchBar flex-container">
+      <input
+        type="text"
+        name="search"
+        placeholder="Look for a city..."
+        class="citySearch"
+      />
+      <input
+        class="display_weather"
+        type="button"
+        name="weatherButton"
+        value="Display Weather"
+        onclick="handleWeather()"
+      />
+    </section>
+
+    <div class="loading"></div>
+
+    <section class="weather grid-container">
+      <div>
+        <p>Live weather conditions</p>
+        <img class="weatherNowIcon" src="" height="100px" width="100px" />
+        <h2 class="degrees"></h2>
+      </div>
+      <div>
+        <p class="feelsLike"></p>
+        <p class="tempMin"></p>
+        <p class="tempMax"></p>
+      </div>
+      <div>
+        <p class="wind"></p>
+        <p class="humidity"></p>
+        <p class="pressure"></p>
+      </div>
+    </section>
+
+    <section class="forecast">
+      <p>Weather Forecast</p>
+      <div class="grid-container forecastTable"></div>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
